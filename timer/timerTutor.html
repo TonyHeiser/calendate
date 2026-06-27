@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer</title>
+  <link rel="stylesheet" href="timer.css">
+</head>
+<body>
+  <main class="main">
+    <div class="container">
+      <form class="setter">
+        <label for="" class="setter__label">Input</label>
+        <input type="number" class="setter__input input-minutes"><span>:</span><input type="number" class="setter__input input-seconds">
+        <button type="submit" class="set-time__btn">Submit</button>
+      </form>
+      <div class="divide"></div>
+      <div class="numbers">
+        <span class="minutes">00</span>
+        <span class="divider">:</span>
+        <span class="seconds">00</span>
+      </div>
+      <div class="actions">
+        <button class="start-btn">Start</button>
+        <button class="stop-btn hidden-btn">Stop</button>
+        <button class="reset-btn hidden-btn">Reset</button>
+      </div>
+      <div class="time-s-up">
+        <h3 class="time-s-up__title">Time's up</h3>
+      </div>
+    </div>
+  </main>
+  <script src="renderTimer.js"></script>
+</body>
+</html>
